@@ -1,0 +1,103 @@
+.skillIcon {
+    height: 11vh;
+    animation: shrink 200ms linear;
+    animation-fill-mode: both;
+}
+
+.skillLabel {
+    color: white;
+}
+
+.skillIcons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 90%;
+}
+
+.skillIconLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skillPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillIconLabel:hover {
+    box-shadow: 0px 0px 40px white;
+}
+
+.skillIconLabel:hover img {
+    animation: enlarge 200ms linear;
+    animation-fill-mode: both;
+}
+
+@keyframes enlarge{
+    from { height: 11vh; margin-bottom: 3vh; }
+    to   { height: 12vh; margin-bottom: 2vh; }
+}
+
+@-moz-keyframes enlarge{
+    from { height: 11vh; margin-bottom: 3vh; }
+    to   { height: 12vh; margin-bottom: 2vh; }
+}
+
+@-webkit-keyframes enlarge{
+    from { height: 11vh; margin-bottom: 3vh; }
+    to   { height: 12vh; margin-bottom: 2vh; }
+}
+
+@keyframes shrink{
+    from { height: 12vh; margin-bottom: 2vh; }
+    to   { height: 11vh; margin-bottom: 3vh; }
+}
+
+@-moz-keyframes shrink{
+    from { height: 12vh; margin-bottom: 2vh; }
+    to   { height: 11vh; margin-bottom: 3vh; }
+}
+
+@-webkit-keyframes shrink{
+    from { height: 12vh; margin-bottom: 2vh; }
+    to   { height: 11vh; margin-bottom: 3vh; }
+}
+
+@media screen and (max-width: 960px) {
+
+    .skillIconLabel p {
+        margin-top: 3vh;
+    }
+
+    .skillIcon {
+        height: auto;
+        width: 12vw;
+        animation: none;
+    }
+
+    .skillIconLabel:hover img {
+        animation: none;
+    }
+
+    .skillIconLabel:hover {
+        box-shadow: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .skillIconLabel {
+        width: 30vw;
+    }
+
+}
