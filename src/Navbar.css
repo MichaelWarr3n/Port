@@ -76,7 +76,7 @@ nav {
     }
   
     .activeNav {
-      background-color: grey;
+      background-color: #d3d3d3;
       left: 0;
       transition: all 0.5s ease;
     }
@@ -88,6 +88,7 @@ nav {
       text-align: center;
       width: 80%;
       height: 15%;
+      border-radius: 16px;
     }
 
     .notActive {
